@@ -1,0 +1,631 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="ru"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;WINNING &amp; WINDY — Оригинальная боксёрская экипировка&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>:root {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--bg-primary: #0b0b0d;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--bg-secondary: #131317;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--bg-card: #18181d;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--border: rgba(201, 164, 92, 0.22);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--border-hover: rgba(201, 164, 92, 0.6);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--gold: #c9a45c;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--gold-light: #e3c483;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--cream: #f4e9d7;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--text-muted: #9a9894;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--accent-burgundy: #9e1834;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>* {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-sizing: border-box;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: var(--bg-primary);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--cream);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.6;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>-webkit-font-smoothing: antialiased;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>header {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: sticky;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>top: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>z-index: 50;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(11, 11, 13, 0.92);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>backdrop-filter: blur(12px);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-bottom: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.nav-container {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 1280px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 18px 24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: space-between;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.brand {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Cormorant Garamond', serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: 0.14em;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--cream);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.brand span {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.cart-trigger {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: transparent;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--gold-light);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 10px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 13px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 500;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: 0.08em;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: all 0.25s ease;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.cart-trigger:hover {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--bg-primary);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 1280px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 72px 24px 48px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-bottom: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-eyebrow {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: 0.24em;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero h1 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Cormorant Garamond', serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: clamp(34px, 5vw, 56px);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.15;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--cream);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 820px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero p {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 600px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.controls {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 1280px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 32px 24px 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-wrap: wrap;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: space-between;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.filters {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-wrap: wrap;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.filter-btn {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--bg-secondary);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 9px 18px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 13px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: all 0.2s ease;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.filter-btn:hover,</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.filter-btn.active {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-color: var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--cream);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(201, 164, 92, 0.12);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.search-input {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--bg-secondary);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--cream);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 9px 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 13px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>min-width: 240px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>outline: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.search-input:focus {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-color: var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.catalog {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 1280px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 24px 24px 80px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--bg-card);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: border-color 0.25s ease, transform 0.25s ease;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card:hover {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-color: var(--border-hover);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transform: translateY(-2px);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card-img-wrap {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>aspect-ratio: 1 / 1;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #101014;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-bottom: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card-img-wrap img {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>object-fit: cover;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.img-placeholder {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Cormorant Garamond', serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: 0.1em;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.badge {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>top: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>left: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(11, 11, 13, 0.85);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--gold-light);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 11px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 4px 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: 0.08em;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.stock-badge {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>bottom: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>right: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(11, 11, 13, 0.85);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 11px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 4px 8px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card-body {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex: 1;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card-title {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 500;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--cream);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card-title:hover {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--gold-light);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card-desc-short {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 13px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: -webkit-box;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>-webkit-line-clamp: 3;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>-webkit-box-orient: vertical;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex: 1;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card-footer {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: space-between;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding-top: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-top: 1px solid rgba(255, 255, 255, 0.06);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.price {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Cormorant Garamond', serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 22px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--gold-light);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn-add {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: transparent;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--cream);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 8px 14px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: 0.06em;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: all 0.2s ease;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn-add:hover {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--bg-primary);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn-add:disabled {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-color: #333;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #666;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: not-allowed;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: transparent;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Modal &amp; Drawer */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.overlay {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: fixed;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>inset: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(0, 0, 0, 0.78);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>z-index: 100;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.overlay.open {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.modal {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--bg-secondary);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 680px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-height: 88vh;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow-y: auto;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 28px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.close-btn {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>top: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>right: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.close-btn:hover {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--cream);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.modal-desc {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>white-space: pre-line;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #d6d3cd;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 18px 0 24px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.cart-item {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: space-between;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 12px 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-bottom: 1px solid rgba(255, 255, 255, 0.08);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.qty-controls {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.qty-btn {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 26px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 26px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--bg-card);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--cream);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.order-form {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.order-form input {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--bg-card);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--cream);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 11px 14px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn-primary {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--bg-primary);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 14px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 13px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: 0.1em;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn-primary:hover {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--gold-light);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>footer {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-top: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 32px 24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 13px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="nav-container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="brand"&gt;FIGHTING &lt;span&gt;GEAR&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="cart-trigger" onclick="openCart()"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>Корзина (&lt;span id="cart-count"&gt;0&lt;/span&gt;)</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="hero"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="hero-eyebrow"&gt;Authentic Japanese &amp; Thai Equipment&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Оригинальная экипировка &lt;span&gt;Winning&lt;/span&gt; &amp; &lt;span&gt;Windy&lt;/span&gt;&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Профессиональные перчатки, боксёрки, защита и аксессуары из Японии и Таиланда. Актуальное наличие обновляется напрямую со склада.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="controls"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="filters" id="category-filters"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;input type="text" class="search-input" id="search-input" placeholder="Поиск по модели или бренду..." oninput="renderCatalog()" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;main class="catalog" id="catalog-grid"&gt;&lt;/main&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Оригинальная экипировка • Оформление заказа напрямую в Telegram (@boxanutiy)</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Модальное окно товара --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="overlay" id="product-modal" onclick="closeModal(event, 'product-modal')"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="modal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="close-btn" onclick="document.getElementById('product-modal').classList.remove('open')"&gt;×&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="modal-content"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Модальное окно корзины --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="overlay" id="cart-modal" onclick="closeModal(event, 'cart-modal')"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="modal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="close-btn" onclick="document.getElementById('cart-modal').classList.remove('open')"&gt;×&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 style="font-family: 'Cormorant Garamond', serif; font-size: 28px; margin-bottom: 16px;"&gt;Ваш заказ&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="cart-items"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="cart-total" style="font-size: 18px; font-weight: 600; color: var(--gold-light); margin-top: 16px; text-align: right;"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="order-form" id="order-form-wrap"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="text" id="client-name" placeholder="Ваше имя" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="text" id="client-contact" placeholder="Телефон или @username для связи" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="btn-primary" onclick="sendToTelegram()"&gt;Оформить заказ в Telegram&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const SHOP_CONFIG = {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>TELEGRAM_USERNAME: 'boxanutiy',</p>
+<p class="p1"><span class="Apple-converted-space">      </span>SHEET_ID: '1UVNLOomfpta1w3NY9w6XcUviysXkStjvRQOrxK3G3wk',</p>
+<p class="p1"><span class="Apple-converted-space">      </span>SHEET_NAME: 'Лист1'</p>
+<p class="p1"><span class="Apple-converted-space">    </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Резервный каталог из вашей таблицы (сработает мгновенно, пока подгружается таблица)</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const FALLBACK_PRODUCTS = [</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ id: 1, name: 'Winning RS-003 — боксерки золото черный размер 28', price: 35000, stock: 1, category: 'Обувь', photo: '', desc: 'Профессиональные боксёрки легендарного японского бренда Winning. Лёгкая конструкция помогает свободно работать на ногах, а высокая посадка обеспечивает фиксацию.' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ id: 3, name: 'Winning JABF-10 — перчатки синие 10', price: 50000, stock: 1, category: 'Перчатки', photo: '', desc: 'Профессиональные боксёрские перчатки Winning JABF-10 (10 oz, синий). Анатомическая посадка и эталонная амортизация ударов.' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ id: 4, name: 'Winning JABF-10 — перчатки красный 10', price: 50000, stock: 1, category: 'Перчатки', photo: '', desc: 'Профессиональные боксёрские перчатки Winning JABF-10 (10 oz, красный). Классический минималистичный дизайн Made in Japan.' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ id: 5, name: 'Winning W-90 — сумка под перчатки', price: 3500, stock: 5, category: 'Уход и аксессуары', photo: '', desc: 'Фирменная компактная сумка японского бренда Winning для удобного хранения и переноски боксёрских перчаток.' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ id: 6, name: 'Winning Original — полотенца 25х25 медведь', price: 1200, stock: 5, category: 'Полотенца', photo: '', desc: 'Оригинальное компактное полотенце Winning 25 × 25 см с фирменным изображением медведя.' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ id: 7, name: 'Winning Original — полотенца 25х25 надпись', price: 1200, stock: 5, category: 'Полотенца', photo: '', desc: 'Оригинальное полотенце Winning Tokyo 25 × 25 см в фирменном чёрно-золотом дизайне.' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ id: 8, name: 'Winning Original — полотенце большое 38х108', price: 3500, stock: 3, category: 'Полотенца', photo: '', desc: 'Большое спортивное полотенце Winning TW-300 (38 × 108 см, Black / White) для тренировок и соревнований.' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ id: 9, name: 'Winning F-73 TEMP (уход за перчатками)', price: 1500, stock: 3, category: 'Уход и аксессуары', photo: '', desc: 'Фирменный набор Winning F-73 со средством Tempo Sports Oil для ухода за натуральной кожей перчаток.' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ id: 10, name: 'Winning F-71 — дезодорант/антибактериальное средство', price: 3000, stock: 1, category: 'Уход и аксессуары', photo: '', desc: 'Антибактериальный спрей Winning F-71 для устранения запахов и гигиены экипировки после тренировок.' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ id: 11, name: 'Winning KVL-S — быстрые бинты', price: 4000, stock: 2, category: 'Бинты и защита', photo: '', desc: 'Быстрые бинты / внутренние перчатки Winning KVL-S (размер S, чёрные) с дополнительной фиксацией запястья.' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ id: 12, name: 'Winning KVL-М — быстрые бинты', price: 4000, stock: 1, category: 'Бинты и защита', photo: '', desc: 'Быстрые бинты / внутренние перчатки Winning KVL-M (размер M, чёрные) с защитной зоной кисти.' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ id: 13, name: 'Winning SB-9000 мяч', price: 4000, stock: 1, category: 'Лапы и снаряды', photo: '', desc: 'Профессиональный боксёрский мяч на растяжках Winning SB-9000 (Made in Japan) для развития реакции и точности.' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ id: 14, name: 'Winning VL-C — бинты', price: 1800, stock: 4, category: 'Бинты и защита', photo: '', desc: 'Классические неэластичные хлопковые боксёрские бинты Winning VL-C (400 × 5 см, комплект 2 шт.).' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ id: 15, name: 'Winning VL-Y — бинты', price: 1800, stock: 2, category: 'Бинты и защита', photo: '', desc: 'Соревновательные эластичные бинты Winning VL-Y (200 × 4 см), одобренные JABF.' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ id: 16, name: 'Winning VL-B — бинты', price: 1800, stock: 1, category: 'Бинты и защита', photo: '', desc: 'Эластичные тренировочные бинты Winning VL-B (450 × 5 см, белые) для плотной фиксации кисти.' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ id: 17, name: 'Winning F-58 — капа', price: 4500, stock: 3, category: 'Бинты и защита', photo: '', desc: 'Оригинальная формуемая боксёрская капа Winning F-58 (Made in Japan).' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ id: 18, name: 'Windy PP-10 — лапы', price: 17000, stock: 1, category: 'Лапы и снаряды', photo: '', desc: 'Оригинальные компактные боксёрские лапы тайского бренда Windy PP-10 (комплект 2 лапы).' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ id: 19, name: 'Windy BGVH-14 (белые перчатки 14)', price: 14500, stock: 1, category: 'Перчатки', photo: '', desc: 'Тренировочные боксёрские перчатки из натуральной кожи Windy BGVH (14 oz, белые).' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ id: 20, name: 'Windy TBG-1 (черные маленькие)', price: 7200, stock: 1, category: 'Перчатки', photo: '', desc: 'Компактные тренировочные перчатки Windy TBG-1 (чёрные) для отработки скорости и точности.' }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>let products = [...FALLBACK_PRODUCTS];</p>
+<p class="p1"><span class="Apple-converted-space">    </span>let activeCategory = 'Все';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>let cart = [];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function parseDriveImageUrl(val) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (!val) return '';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const trimmed = val.trim();</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const match = trimmed.match(/[-\w]{25,}/);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (trimmed.includes('drive.google.com') &amp;&amp; match) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>return `https://drive.google.com/thumbnail?id=${match[0]}&amp;sz=w800`; } if (/^[-\w]{25,}$/.test(trimmed)) { return `https://drive.google.com/thumbnail?id=${trimmed}&amp;sz=w800`;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (trimmed.startsWith('http')) return trimmed;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>return '';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>async function loadFromGoogleSheet() {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const url = `https://docs.google.com/spreadsheets/d/${SHOP_CONFIG.SHEET_ID}/gviz/tq?tqx=out:json&amp;sheet=${encodeURIComponent(SHOP_CONFIG.SHEET_NAME)}`;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>try {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const res = await fetch(url);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const text = await res.text();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const json = JSON.parse(text.substring(47).slice(0, -2));</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const rows = json.table.rows;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>const parsed = [];</p>
+<p class="p1"><span class="Apple-converted-space">        </span>rows.forEach((r, idx) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>const c = r.c;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>if (!c || !c[1] || !c[1].v) return;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>const name = String(c[1].v).trim();</p>
+<p class="p1"><span class="Apple-converted-space">          </span>if (name === 'Товар') return;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>const priceRaw = c[3] ? (c[3].v || c[3].f || '0') : '0';</p>
+<p class="p1"><span class="Apple-converted-space">          </span>const price = Number(String(priceRaw).replace(/[^\d]/g, '')) || 0;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>const stock = c[5] &amp;&amp; c[5].v !== null ? Number(c[5].v) : 1;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>const desc = c[6] &amp;&amp; c[6].v ? String(c[6].v) : '';</p>
+<p class="p1"><span class="Apple-converted-space">          </span>const photo = c[7] &amp;&amp; c[7].v ? parseDriveImageUrl(String(c[7].v)) : '';</p>
+<p class="p1"><span class="Apple-converted-space">          </span>const category = c[8] &amp;&amp; c[8].v ? String(c[8].v).trim() : 'Экипировка';</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>parsed.push({ id: idx + 1, name, price, stock, desc, photo, category });</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (parsed.length &gt; 0) {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>const inStockNames = new Set(parsed.filter(p =&gt; p.stock &gt; 0).map(p =&gt; p.name));</p>
+<p class="p1"><span class="Apple-converted-space">          </span>products = parsed.filter(p =&gt; p.stock &gt; 0 || !inStockNames.has(p.name));</p>
+<p class="p1"><span class="Apple-converted-space">          </span>renderFilters();</p>
+<p class="p1"><span class="Apple-converted-space">          </span>renderCatalog();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>} catch (e) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>console.warn('Используется резервный каталог:', e);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function renderFilters() {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const categories = ['Все', ...new Set(products.map(p =&gt; p.category))];</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const container = document.getElementById('category-filters');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>container.innerHTML = categories.map(cat =&gt; `</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="filter-btn ${cat === activeCategory ? 'active' : ''}" onclick="setCategory('${cat}')"&gt;${cat}&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>`).join('');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function setCategory(cat) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>activeCategory = cat;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>renderFilters();</p>
+<p class="p1"><span class="Apple-converted-space">      </span>renderCatalog();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function renderCatalog() {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const query = document.getElementById('search-input').value.toLowerCase();</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const grid = document.getElementById('catalog-grid');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const filtered = products.filter(p =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const matchCat = activeCategory === 'Все' || p.category === activeCategory;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const matchSearch = p.name.toLowerCase().includes(query) || p.desc.toLowerCase().includes(query);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>return matchCat &amp;&amp; matchSearch;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>grid.innerHTML = filtered.map(p =&gt; `</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;article class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="card-img-wrap" onclick="openProduct(${p.id})"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="badge"&gt;${p.category}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="stock-badge"&gt;${p.stock &gt; 0 ? `В наличии: ${p.stock} шт.` : 'Нет в наличии'}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>${p.photo</p>
+<p class="p1"><span class="Apple-converted-space">              </span>? `&lt;img src="${p.photo}" alt="${p.name}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" /&gt;&lt;div class="img-placeholder" style="display:none;"&gt;WINNING / WINDY&lt;/div&gt;`</p>
+<p class="p1"><span class="Apple-converted-space">              </span>: `&lt;div class="img-placeholder"&gt;WINNING&lt;br&gt;&lt;span style="font-size:12px; color:#9a9894;"&gt;ORIGINAL EQUIPMENT&lt;/span&gt;&lt;/div&gt;`</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="card-body"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3 class="card-title" onclick="openProduct(${p.id})"&gt;${p.name}&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="card-desc-short"&gt;${p.desc}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card-footer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="price"&gt;${p.price.toLocaleString('ru-RU')} ¥&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;button class="btn-add" ${p.stock &lt;= 0 ? 'disabled' : ''} onclick="addToCart(${p.id})"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>${p.stock &gt; 0 ? 'В корзину' : 'Продано'}</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>`).join('');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function openProduct(id) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const p = products.find(item =&gt; item.id === id);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (!p) return;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById('modal-content').innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span style="color: var(--gold); font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em;"&gt;${p.category}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 style="font-family: 'Cormorant Garamond', serif; font-size: 28px; margin-top: 6px;"&gt;${p.name}&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="price" style="margin-top: 10px;"&gt;${p.price.toLocaleString('ru-RU')} ¥&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="modal-desc"&gt;${p.desc}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="btn-primary" ${p.stock &lt;= 0 ? 'disabled' : ''}</p>
+</body>
+</html>
